@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1764</width>
+    <height>875</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="notification_firm">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>-10</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="req">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>选择请求：</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>注册</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>登录</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>退出登录</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>加入战斗</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>查询所有在线用户</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>查询用户宠物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>查询服务器宠物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>查询用户胜率和奖牌榜</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>客户端退出</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="confirm_req">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>160</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pwd">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>120</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>200</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="battlekind">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>选择战斗类型</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>升级赛</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>决斗赛</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="confirm_battlekind">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>430</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirm_userpwd">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>310</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="notification_timer">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="mypet">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>500</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>你的可选宠物有：</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="confirm_myChoice">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>600</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirm_enemy">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>770</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="serpet">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>670</y>
+      <width>521</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>服务器的宠物有：</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="feedback">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>40</y>
+      <width>651</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="confirm_sendpet">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>640</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确认</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="sendpet">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>440</y>
+      <width>591</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="giveup">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>560</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="showmypet">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>180</y>
+      <width>481</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>200</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>胜率</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="win_rate">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>240</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>340</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>宠物个数徽章</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="count_medal">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>380</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>470</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>高级宠物徽章</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="quality_medal">
+    <property name="geometry">
+     <rect>
+      <x>1590</x>
+      <y>510</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showmypet_label">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>120</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="choose_note">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>490</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="send_list_note">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>370</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quit">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>290</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出对战</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="opr0">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>250</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>普通攻击</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="opr1">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>330</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大招</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="serlife">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>630</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cltlife">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>730</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>590</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>对战中服务器生命值和经验值</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>690</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>对战中客户端生命值和经验值</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="onlinecltlabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>260</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="onlinecltcombo">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>320</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>0</y>
+      <width>411</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>从服务器收到的反馈</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="getmychoice">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="getenemy">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>720</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1764</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
